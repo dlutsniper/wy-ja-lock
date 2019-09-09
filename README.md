@@ -59,6 +59,13 @@ AccountDemoFaa
   26.2ms 36.4ms 31.3ms
 
 JIT吗？执行越多速度越快？
+关闭JIT -Xint / -Djava.compiler=NONE
+AccountDemoSynchronized 100次关闭前后
+  16.66ms 13.77ms 11.26ms
+  93.14ms 102.12ms 81.13ms
+AccountDemoCas 100次关闭前后
+  12.74ms 10.5ms 12.42ms
+  82.48ms 74.7ms 77.09ms
 ```
 
 ## FAA by CAS

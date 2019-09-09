@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 public class AccountDemoCas {
     public static void main(String[] args) throws Exception {
         var mss = new ArrayList<Long>();
-        for (int ii = 0; ii < 10; ii++)
+        for (int ii = 0; ii < 100; ii++)
             mss.add(test(10000));
         Double average = mss.stream().collect(Collectors.averagingLong(Long::longValue));
         System.out.println("average: " + average + "ms"); // 约 64.84ms 68.19ms 67.52ms 67.8ms 63.62ms
